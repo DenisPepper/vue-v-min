@@ -3,7 +3,8 @@ import { createApp } from 'vue'
 const app = {
     data() {
         return {
-            counter: 0,
+            title: 'notes list',
+            hint: 'add new note ...',
         }
     }
 };
