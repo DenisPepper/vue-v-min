@@ -21,7 +21,14 @@ const app = {
         },
         removeNote(value, evt) {
             this.notes = this.notes.filter((note) => note !== value)
+        },
+        formatNote(note) {
+            return note.toUpperCase();
+        },
+        formatIndex(index){
+            return index + 1;
         }
+
     }
 };
 

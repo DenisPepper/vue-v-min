@@ -28,7 +28,7 @@
     </form>
     <ul class="note-list" v-if="notes.length > 0">
         <li class="note-item" v-for="(note, index) of notes">
-            {{index + 1}}. {{note}}
+            {{formatIndex(index)}}. {{formatNote(note)}}
             <button type="button" v-on:click="removeNote(note, $event)">X</button>
         </li>
     </ul>
