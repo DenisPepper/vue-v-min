@@ -13,18 +13,12 @@ const app = {
         handleInputChange(evt) {
             this.value = evt.target.value;
         },
-        handleButtonClick() {
+        handleButtonClick(evt) {
+            evt.preventDefault()
             if (!this.value) return;
             this.notes.push(this.value)
             this.value = ''
         },
-        handleKeyPress(evt) {
-            if(evt.key === "Enter") {
-                evt.preventDefault();
-                this.handleButtonClick();
-            }
-
-        }
     }
 };
 

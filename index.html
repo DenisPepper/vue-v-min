@@ -16,7 +16,7 @@
                     v-bind:placeholder='hint'
                     v-bind:value='value'
                     v-on:input="handleInputChange"
-                    v-on:keypress="handleKeyPress"
+                    v-on:keypress.enter="handleButtonClick"
             >
             <button
                     type="button"
