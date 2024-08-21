@@ -11,8 +11,8 @@
     <div class="card">
         <h1>Counter: {{counter}}</h1>
         <div>
-            <button class="btn btn--increment" type="button">+</button>
-            <button class="btn btn--decrement" type="button">-</button>
+            <button class="btn btn--increment" type="button" v-on:click="counter+=1">+</button>
+            <button class="btn btn--decrement" type="button" v-on:click="counter-=1">-</button>
         </div>
     </div>
 </div>
