@@ -13,14 +13,14 @@
             <legend>{{title}}</legend>
             <input
                     type="text"
-                    v-bind:placeholder='hint'
-                    v-bind:value='value'
-                    v-on:input="handleInputChange"
-                    v-on:keypress.enter="handleButtonClick"
+                    :placeholder='hint'
+                    :value='value'
+                    @input="handleInputChange"
+                    @keypress.enter="handleButtonClick"
             >
             <button
                     type="button"
-                    v-on:click="handleButtonClick"
+                    @click="handleButtonClick"
             >
                 add
             </button>
@@ -29,7 +29,7 @@
     <ul class="note-list" v-if="notes.length > 0">
         <li class="note-item" v-for="(note, index) of notes">
             {{formatIndex(index)}}. {{formatNote(note)}}
-            <button type="button" v-on:click="removeNote(note, $event)">X</button>
+            <button type="button" @click="removeNote(note, $event)">X</button>
         </li>
     </ul>
 </div>
