@@ -11,7 +11,12 @@
     <form class="form">
         <fieldset>
             <legend>{{title}}</legend>
-            <input type="text" v-bind:placeholder='hint'>
+            <input
+                    type="text"
+                    v-bind:placeholder='hint'
+                    v-bind:value='value'
+                    v-on:input="handleInputChange"
+            >
             <button type="button">add</button>
         </fieldset>
     </form>
