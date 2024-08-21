@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Основы Vue.js</title>
+    <link rel="stylesheet" href="./theme.css">
+</head>
+<body>
+<div id="root">
+    <div class="card">
+        <h1>Counter: {{counter}}</h1>
+        <div>
+            <button class="btn btn--increment" type="button">+</button>
+            <button class="btn btn--decrement" type="button">-</button>
+        </div>
+    </div>
+</div>
+<script type="importmap">
+  {
+    "imports": {
+      "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+    }
+  }
+</script>
+<script src="./app.js" type="module"></script>
+</body>
+</html>
