@@ -19,8 +19,8 @@ const app = {
             this.notes.push(this.value)
             this.value = ''
         },
-        removeNote(value) {
-          this.notes = this.notes.filter((note) => note !== value)
+        removeNote(value, evt) {
+            this.notes = this.notes.filter((note) => note !== value)
         }
     }
 };

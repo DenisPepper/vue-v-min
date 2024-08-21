@@ -29,7 +29,7 @@
     <ul class="note-list">
         <li class="note-item" v-for="(note, index) of notes">
             {{index + 1}}. {{note}}
-            <button type="button" v-on:click="removeNote(note)">X</button>
+            <button type="button" v-on:click="removeNote(note, $event)">X</button>
         </li>
     </ul>
 </div>
