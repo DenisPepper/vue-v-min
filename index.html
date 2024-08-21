@@ -27,7 +27,10 @@
         </fieldset>
     </form>
     <ul class="note-list">
-        <li class="note-item" v-for="note of notes">{{note}}</li>
+        <li class="note-item" v-for="(note, index) of notes">
+            {{index + 1}}. {{note}}
+            <button type="button" v-on:click="removeNote(note)">X</button>
+        </li>
     </ul>
 </div>
 <script type="importmap">
