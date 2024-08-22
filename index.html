@@ -48,7 +48,10 @@
     <br>
     <div v-html="vhtml"></div>
     <ul>
-        <li v-for="(value, key) of person">
+        <li
+                v-for="(value, key) of person"
+                :key="key"
+        >
             {{key}} : {{value}}
         </li>
     </ul>
