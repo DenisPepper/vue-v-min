@@ -1,14 +1,12 @@
 import { createApp } from 'vue'
 
 const app = {
-    data() {
-        return {
-            title: 'notes list',
-            hint: 'add new note ...',
-            value: '',
-            notes: [],
-        }
-    },
+    data: () => ({
+        title: 'notes list',
+        hint: 'add new note ...',
+        value: '',
+        notes: [],
+    }),
     methods: {
         handleButtonClick(evt) {
             evt.preventDefault()
