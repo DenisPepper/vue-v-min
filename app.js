@@ -8,6 +8,7 @@ const app = {
         notes: [],
         vtext: 'this is v-text directive',
         vonce: 'this content will be rendered once, even if model will be changed',
+        vhtml: '<span>this tag will be added as child node for tag with v-html directive</span>'
     }),
     methods: {
         handleButtonClick(evt) {
