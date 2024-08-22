@@ -6,6 +6,7 @@ const app = {
         hint: 'add new note ...',
         value: '',
         notes: [],
+        vtext: 'this is v-text directive',
     }),
     methods: {
         handleButtonClick(evt) {
