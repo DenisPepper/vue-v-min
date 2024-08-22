@@ -7,6 +7,7 @@ const app = {
         value: '',
         notes: [],
         vtext: 'this is v-text directive',
+        vonce: 'this content will be rendered once, even if model will be changed',
     }),
     methods: {
         handleButtonClick(evt) {
