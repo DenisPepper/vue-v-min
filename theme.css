@@ -1,2 +1,16 @@
 
+.legend--red {
+    color: red;
+}
 
+.legend--bold {
+    font-weight: bold;
+}
+
+.input--black {
+    background-color: black;
+}
+
+.input--color-gold {
+    color: gold;
+}
