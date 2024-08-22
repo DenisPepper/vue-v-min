@@ -10,9 +10,6 @@ const app = {
         }
     },
     methods: {
-        handleInputChange(evt) {
-            this.value = evt.target.value;
-        },
         handleButtonClick(evt) {
             evt.preventDefault()
             if (!this.value) return;
@@ -37,6 +34,16 @@ const app = {
 
          это методы будут вызываться только тогда, когда значение ключа будет изменено
         */
+    },
+    watch: {
+        value(value) {
+            /*
+            метод value следит за изменением ключа value из метода data()
+            имя метода должно совпадать с именем ключа
+            он сработает каждый раз, как только значение ключа изменится
+            используется при fetch, валидации полей ввода и т.п.
+             */
+        }
     }
 };
 

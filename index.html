@@ -14,8 +14,7 @@
             <input
                     type="text"
                     :placeholder='hint'
-                    :value='value'
-                    @input="handleInputChange"
+                    v-model="value"
                     @keypress.enter="handleButtonClick"
             >
             <button
