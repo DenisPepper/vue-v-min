@@ -47,6 +47,11 @@
     <span v-once>{{vonce}}</span>
     <br>
     <div v-html="vhtml"></div>
+    <ul>
+        <li v-for="(value, key) of person">
+            {{key}} : {{value}}
+        </li>
+    </ul>
 </div>
 <script type="importmap">
   {
