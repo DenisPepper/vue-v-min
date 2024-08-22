@@ -20,7 +20,8 @@
             <button
                     type="button"
                     @click="handleButtonClick"
-                    :style="{color:'red',backgroundColor: 'gold',}"
+                    :style="{color: notes.length ? 'green' : 'red'}"
+                    :disabled="value.length < 3 ? true : false"
             >
                 add
             </button>
