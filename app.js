@@ -17,7 +17,6 @@ const app = {
     }),
     methods: {
         handleButtonClick(evt) {
-            evt.preventDefault()
             if (!this.value) return;
             this.notes.push(this.value)
             this.value = ''

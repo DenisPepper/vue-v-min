@@ -23,7 +23,7 @@
                     type="text"
                     :placeholder='hint'
                     v-model="value"
-                    @keypress.enter="handleButtonClick"
+                    @keypress.enter.prevent="handleButtonClick"
             >
             <button
                     type="button"
